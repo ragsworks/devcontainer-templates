@@ -3,13 +3,13 @@
 {
     "name": "Alpine",
 
-    // "build": {
-    //    "dockerfile": "Dockerfile"
-    //}
+    "build": {
+       "dockerfile": "Dockerfile"
 
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "base",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+
+    // "dockerComposeFile": "docker-compose.yml",
+    // "service": "base",
+    // "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 
     // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
     // "features": {},
