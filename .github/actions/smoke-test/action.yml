@@ -1,0 +1,25 @@
+name: 'Smoke Test'
+description: 'Smoke Testing is a software testing method that is used to determine whether a new software build is ready for the next testing phase'
+
+inputs:
+    template:
+        description: 'Template to test'
+        required: true
+
+runs:
+    using: composite
+    steps:
+
+      - name: Checkout Main
+        id: checkout_release
+        uses: actions/checkout@v3
+
+      - name: Build Template
+        id: build_template
+        shell: bash
+        run: "${{ github.action_path }}"/build.sh "${{ inputs.template }}"
+
+      - name: Test template
+        id: test_template
+        shell: bash
+        run: "${{ github.action_path }}"/test.sh "${{ inputs.template }}"
