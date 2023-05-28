@@ -1,0 +1,12 @@
+{
+    "id": "alpine",
+    "version": "1.0.0",
+    "name": "Alpine",
+    "description": "Simple Alpine container",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-templates/tree/master/src/base-alpine",
+    "publisher": "Ragdata",
+    "licenseURL": "https://github.com/ragsworks/devcontainer-templates/blob/master/LICENSE",
+    "platforms": [
+        "Any"
+    ]
+}

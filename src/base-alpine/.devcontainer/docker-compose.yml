@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+    base:
+        build:
+            context: ..
+            dockerfile: .devcontainer/Dockerfile
+
+        # Change this to the path you want VSCode to include for editing
+        volumes:
+            - ../..:/workspaces:cached
+
+    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally.
+    # (Adding the "ports" property to this file will not forward from a Codespace.)
