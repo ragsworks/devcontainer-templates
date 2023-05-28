@@ -227,28 +227,28 @@ It's not just contributions of code that I'm looking for.  If you have any ideas
 
 This project incorporates ideas and / or code crafted by the following talented individuals:
 
-* [**devcontainers/spec**](https://github.com/devcontainers/spec)
-	Copyright © Microsoft Corporation
+* [**devcontainers/spec**](https://github.com/devcontainers/spec)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/action**](https://github.com/devcontainers/action)
-	Copyright © 2022 Microsoft Corporation
+* [**devcontainers/action**](https://github.com/devcontainers/action)<br />
+	Copyright © 2022 Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/ci**](https://github.com/devcontainers/ci)
-	Copyright © Microsoft Corporation
+* [**devcontainers/ci**](https://github.com/devcontainers/ci)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/templates**](https://github.com/devcontainers/templates)
-	Copyright © Microsoft Corporation. All rights reserved.
+* [**devcontainers/templates**](https://github.com/devcontainers/templates)<br />
+	Copyright © Microsoft Corporation. All rights reserved.<br />
 	MIT Licensed
 
 
-* [**devcontainers/template-starter**](https://github.com/devcontainers/template-starter)
-	Copyright © Microsoft Corporation
+* [**devcontainers/template-starter**](https://github.com/devcontainers/template-starter)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 > "We see much further, and reach much higher,<br>only because we stand upon the shoulders of giants"
@@ -272,10 +272,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## 📖 [Resources](#toc)
 
 ### Attributed Projects
-
-
-### Relevant Resources
-
+- [**devcontainers/spec**](https://github.com/devcontainers/spec)
+- [**devcontainers/action**](https://github.com/devcontainers/action)
+- [**devcontainers/ci**](https://github.com/devcontainers/ci)
+- [**devcontainers/templates**](https://github.com/devcontainers/templates)
+- [**devcontainers/template-starter**](https://github.com/devcontainers/template-starter)
 
 [`^ Top`](#toc)
 
