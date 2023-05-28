@@ -1,5 +1,5 @@
 {
-    "id": "alpine",
+    "id": "base-alpine",
     "version": "1.0.0",
     "name": "Alpine",
     "description": "Simple Alpine container",
