@@ -1,0 +1,3 @@
+ARG VARIANT=22.04
+FROM ubuntu:${VARIANT}
+
