@@ -1,26 +1,27 @@
-name: "Release DevContainer Templates"
+name: "Update Documentation"
 
 on:
+    push:
+        branches:
+            - master
     workflow_dispatch:
 
 jobs:
 
-    deploy:
-        if: ${{ github.ref == 'refs/heads/master' }}
+    generate:
         runs-on: ubuntu-latest
+        environment: documentation
+        if: "github.ref == 'refs/heads/master'"
         steps:
 
             - name: Checkout
               uses: actions/checkout@v3
 
-            - name: Publish Templates
+            - name: Generate Documentation
               uses: devcontainers/action@v1
               with:
-                  publish-templates: "true"
                   base-path-to-templates: "./src"
                   generate-docs: "true"
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Create PR for Documentation
               id: push_image_info
@@ -46,5 +47,11 @@ jobs:
                   # Push
                   if [ "$NO_UPDATES" != "true" ]; then
                       git push origin "$branch"
-                      gh pr create --title "$message" --body "$message"
+                      gh api --method POST \
+                        -H "Accept: application/vnd.github+json" \
+                        /repos/${GITHUB_REPOSITORY}/pulls \
+                        -f title="$message" \
+                        -f body="$message" \
+                        -f head="$branch" \
+                        -f base='main'
                   fi
